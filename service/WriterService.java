@@ -21,6 +21,7 @@ public class WriterService {
             BufferedWriter writer = new BufferedWriter(out)){
             writer.write(service.toString(contact));
         } catch (Exception e) {
+            System.out.println(e.getStackTrace());
             throw new Exception("Не удалось записать новый контакт в файл:" + pathForWrite);
         }
     }

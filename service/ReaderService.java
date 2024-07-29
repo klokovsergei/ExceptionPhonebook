@@ -19,6 +19,7 @@ public class ReaderService {
             }
 
         } catch (Exception e) {
+            System.out.println(e.getStackTrace());
             System.out.println("Путь к директории не корректен.");
         }
         return phonebookContacts;
