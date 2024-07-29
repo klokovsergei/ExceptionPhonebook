@@ -66,7 +66,6 @@ public class PhonebookView {
                 System.out.println("Вы выбрали некорректный номер записи.");
                 start();
             }
-            System.out.println(listContacts.get(index));
             System.out.println("\nИмеющиеся контакты:");
             List<String> listContact = new ReaderService().readPhonebookContact(listContacts.get(index));
             listContact.stream().forEach(System.out::println);
